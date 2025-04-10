@@ -12,6 +12,14 @@
 #ifndef __ACCOUNT_H__
 #define __ACCOUNT_H__
 
+#include <iostream>
+#include <iomanip>
+#include <ctime>
+#include <cstddef>
+#include <vector>
+#include <algorithm>
+#include <functional>
+
 // ************************************************************************** //
 //                               Account Class                                //
 // ************************************************************************** //

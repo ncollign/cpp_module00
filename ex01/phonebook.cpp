@@ -1,8 +1,4 @@
 #include "phonebook.hpp"
-#include <iostream>
-#include <iomanip>
-#include <cstdlib>
-#include <cctype>
 
 PhoneBook::PhoneBook() : total_contacts(0) {}
 
@@ -65,7 +61,7 @@ void PhoneBook::searchContacts() {
 static bool	isValidString(const std::string& str) {
 	for (size_t i = 0; i < str.length(); i++)
 	{
-		if (!isalpha(str[i]) && !isdigit(str[i]) && str[i] != ' ' && str[i] != '\'' && str[i] != '.' && str[i] != '-') {
+		if (!isprint(str[i])) {
 			return (false);
 		}
 	}
